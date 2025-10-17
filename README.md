@@ -59,8 +59,21 @@ Figure -02 HALF Subtractor
 
 **Program:**
 
- module FAHA1 (a,b,c,x,y,z,sum,dif,car,bor); input a,b,c,x,y,z; output sum,dif,car,bor; assign sum = a^b^c; assign car = a&b |
- a&c | b&c; assign dif = x^y^z; assign bor = ~x&z | ~x&y | y&z; endmodule
+module FAHA1 (a,b,c,x,y,z,sum,dif,car,bor);
+
+input a,b,c,x,y,z;
+
+output sum,dif,car,bor;
+
+assign sum = a^b^c;
+
+assign car = a&b |a&c | b&c;
+
+assign dif = x^y^z;
+
+assign bor = ~x&z | ~x&y | y&z;
+
+endmodule
 
 Developed by: RegisterNumber:*/
 SUndaresh/25006077
